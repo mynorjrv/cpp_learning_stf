@@ -1,0 +1,115 @@
+1. When you write a C program, do you prepare a source file or an object file?
+
+    When you weite a C program you create a source file that contains the text of the program. The compiler translates ir into an object file which combined with other object files (using a linker) produce an executable file.
+
+2. What characters are used to mark comments in a C++ program?
+
+    // for inline (used for parts that are not yet complete)
+    /* */ for blocks
+
+3. In an #include line, the name of the library header file can be enclosed in either angle brackets or double quotation marks. What is the difference between the two forms of punctuation?
+
+    <> is for standard libraries (a system library)
+    "" is a non standar header file written by you of that come frome otrher library
+
+4. How would you define a constant called CENTIMETERS_PER_INCH with the value 2.54?
+
+    const double CENTIMETERS_PER_INCH = 2.54;
+
+5. What is the name of the function that must be defined in every C++ program? What statement typically appears at the end of that function?
+
+    int main () {
+        return 0;
+    }
+    
+    The value reports the status of the program. 0 indicates succes.
+
+6. What is the purpose of endl when you are writing to the cout output stream?
+
+    It is the end-of-line swquence, which ensures that next output operation will begin on a new line.
+    Youtube recomends using "/n" if I am still printing things.
+
+7. Define each of the following terms for variables: name, type, value, and scope.
+
+    Emmm name is... he name of the variable? Not sure how to define it.
+    type indicates the data type(?) for that specific variable.
+    value is the specific value(?) a variable takes.
+    Scope is the region in which the variable is accessible.
+
+8. Indicate which of the following are legal variable names in C++:
+(pos24)
+    Legal names:
+        x
+        formula1
+        average_rainfall
+        tiny
+        aVeryLongVariableName
+        b4hand
+        _stk_depth
+        
+    Non legal names:
+        %correct
+        short
+        marginal-cost
+        total output
+        12MonthTotal
+
+9. What are the two attributes that define a data type?
+
+    A domain, which is the set of values that belong to the data type.
+    A set of operations, which defines the behavior of that type.
+
+10. What is the difference between the types short, int, and long?
+
+    The three are integers and C++ does not specify the range for these types. The internal size cannot decrease as you move from short to int to long. The maximum value of int must be at least 12^15 - 1. The maximum value of long must be at least 2^31 - 1
+
+11. What does ASCII stand for?
+
+    American Standatd Code fro Information Interchange
+
+12. List all possible values of type bool.
+
+    true and false
+
+13. What statements would you include in a program to read a value from the user and store it in the variable x, which is declared as a double?
+    
+    #include <iostream>
+
+    double x;
+    std::cin >> x;
+
+14. Suppose that a function contains the following declarations:
+
+    int i;
+    double d;
+    char c;
+    string s;
+    
+    Write a statement that displays the values of each of these variables on the screen, along with the name of the variable so that you can tell the values apart.
+
+15. Indicate the values and types of the following expressions:
+
+16. What is the difference between the unary minus and the subtraction operator?
+
+17. What does the term truncation mean?
+
+18. What is a type cast and how do you indicate one in C++?
+
+19. Calculate the result of each of the following expressions:
+
+20. How do you specify a shorthand assignment operation?
+
+21. What is the difference between the expressions ++x and x++?
+
+22. What is meant by short-circuit evaluation?
+
+23. Write out the general syntactic form for each of the following control statements: if, switch, while, for.
+
+24. Describe in English the operation of the switch statement, including the role of the break statement at the end of each case clause.
+
+25. What is a sentinel?
+
+26. What for loop control line would you use in each of the following situations?
+
+
+
