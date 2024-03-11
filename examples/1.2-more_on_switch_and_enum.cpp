@@ -18,6 +18,8 @@ bool isLeapYear(int year);
 int main() {
     cout << "September, 1998 have " 
         << daysInMonth(SEPTEMBER, 1998) << " days." << "\n";
+    cout << "April, 2000 have " 
+        << daysInMonth(APRIL, 2000) << " days." << "\n";
     cout << "February, 2024 have " 
         << daysInMonth(FEBRUARY, 2024) << " days." << endl;
     

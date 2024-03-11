@@ -1,6 +1,6 @@
 1. When you write a C program, do you prepare a source file or an object file?
 
-    When you weite a C program you create a source file that contains the text of the program. The compiler translates ir into an object file which combined with other object files (using a linker) produce an executable file.
+    When you write a C program you create a source file that contains the text of the program. The compiler translates it into an object file which combined with other object files (using a linker) produce an executable file.
 
 2. What characters are used to mark comments in a C++ program?
 
@@ -31,7 +31,7 @@
 
 7. Define each of the following terms for variables: name, type, value, and scope.
 
-    Emmm name is... he name of the variable? Not sure how to define it.
+    Emmm name is... the name of the variable? Not sure how to define it.
     type indicates the data type(?) for that specific variable.
     value is the specific value(?) a variable takes.
     Scope is the region in which the variable is accessible.
@@ -86,30 +86,114 @@
     string s;
     
     Write a statement that displays the values of each of these variables on the screen, along with the name of the variable so that you can tell the values apart.
+    
+    std::cout 
+        << "i = " << i << "/n"
+        << "d = " << d << "/n"
+        << "c = " << c << "/n"
+        << "s = " << s << endln;
 
 15. Indicate the values and types of the following expressions:
+    2 + 3: int
+    19 / 5: int (because both operands are int)
+    19.0 / 5: float
+    3 * 6.0: float
+    19 % 5: int
+    2 % 7: int
 
 16. What is the difference between the unary minus and the subtraction operator?
 
+    The unary minus is for making a value negative (negation).
+    The subtraction operator is for subtracting(?), and is a binary operation.
+
 17. What does the term truncation mean?
+
+    It is called truncation when the decimal fraction is discarted.
 
 18. What is a type cast and how do you indicate one in C++?
 
+    Is an explicit conversion from one type to another.
+    It is usually implemented using the name of the desired type followed by the value to convert in parentheses. 
+    
+    For example int(9.0) or double(3).
+    
+    Data loss could happen depending on the conversion.
+    
+    (Youtube recomends avoiding this type of casts)
+
 19. Calculate the result of each of the following expressions:
+
+    6 + 5 / 4 - 3 :
+    2 + 2 * (2 * 2 - 2) % 2 / 2 :
+    10 + 9 * ((8 + 7) % 6) + 5 * 4 % 3 * 2 + 1 :
+    1 + 2 + (3 + 4) * ((5 * 6 % 7 * 8) - 9) - 10 :
 
 20. How do you specify a shorthand assignment operation?
 
+    variable op= expression; (where op is a binary operator)
+    
+    for example i += 1;
+
 21. What is the difference between the expressions ++x and x++?
+
+    Prefix form increments the value of x first, then uses the new value as the value of the ++ operation as a whole.
+
+    Suffix form calculates the value of x first, and the increments it. The value returned to the surrounding expression is the original value before the increment operation is performed.
 
 22. What is meant by short-circuit evaluation?
 
+    It is used for Boolean operands, it means that the evaluation of an expression stops as soon as the result is known.
+    
+    For example, in exp1 && exp2, if exp1 is false then it is already known that the whole espession is false.
+
 23. Write out the general syntactic form for each of the following control statements: if, switch, while, for.
+
+    if (condition) statement
+    if (condition) statement else statement
+    
+    (e is a control expression)
+    switch (e) {
+        case c1:
+            statements
+            break;
+        case c2:
+            statements
+            break;
+        ...
+        case cn:
+            statements
+            break;
+        default:
+            statements
+            break;
+    }
+    
+    while (contidion) statement
+    
+    for (int var = start; var <= finish; var++) statement
 
 24. Describe in English the operation of the switch statement, including the role of the break statement at the end of each case clause.
 
+    It is used for a more complex decission structure than just a true of false. First, it evaluates the control expression and compares against the values c1, c2 and so forth. If one of the values matches, the statements are executed. Then, when the program reaches the break statement, the program continues with the statements after the entire switch.
+    
+    An empty case is used for making case clauses representing two posibilities. For example
+    
+    case 1:
+    case 2:
+        statements
+        break;
+        
+    This works because when the break statement is missing the program starts executing statements from the next clause after it finishes the selected one.
+
 25. What is a sentinel?
+
+    Is a special value that signals the end of an input.
 
 26. What for loop control line would you use in each of the following situations?
 
-
-
+    Counting from 1 to 100 
+        for (int i = 1; var <= 100; i++)
+    Counting by sevens starting at 0 until the number has more than two digits
+        for (int i = 0; var < 100; i+=7)
+    Counting backward by twos from 100 to 0
+        for (int i = 100; var >= 0; i--)
