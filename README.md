@@ -8,5 +8,7 @@ The notation 1.3-something.cpp means is something related to chapter 1 but is no
 
 my\ solutions/ are solutions to the handouts of the CS106 course from stanford.
 
+Solutions\ to\ the\ book/ are some problems from the book that I solved.
+
 The material (including videos and the handouts) for this course is available 
 on https://see.stanford.edu/Course/CS106B with professor Julie Zelenski
