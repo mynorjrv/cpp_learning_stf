@@ -16,3 +16,6 @@ For some reason xd I used uppercase to indicate words xd
 
 The material (including videos and the handouts) for this course is available 
 on https://see.stanford.edu/Course/CS106B with professor Julie Zelenski
+
+Updated resources (including instructions to setup Qt Creator) can be foound in
+https://web.stanford.edu/dept/cs_edu/resources/
