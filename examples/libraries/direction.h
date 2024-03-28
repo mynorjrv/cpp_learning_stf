@@ -7,12 +7,14 @@
 #ifndef _direction_h
 #define _direction_h
 
+#include <string>
+
 /*
  * Type: Direction
  * ---------------------
  * This enumerated type represents the four compass directions.
  */
-enum Direction (NORTH, EAST, SOUTH, WEST);
+enum Direction {NORTH, EAST, SOUTH, WEST};
 
 /*
  * Function: leftFrom
