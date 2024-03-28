@@ -1,0 +1,8 @@
+bin/ is to compile in there, specifically libraries.
+Right now I am just using static libraries, in bin/static/
+
+To compile:
+g++ -c libraries/file1.cpp -o bin/static/file1.o
+g++ -c libraries/file2.cpp -o bin/static/file2.o
+ar rcs bin/static/liblibraries.a bin/static/file1.o bin/static/file2.o
+g++ main.cpp -L bin/static -l libraries -o bin/main.out
