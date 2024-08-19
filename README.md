@@ -1,6 +1,7 @@
 A repo to learn C++.
 I am following Programming Abstractions in C++
 the CS106B-beta reader from Stanford.
+The beta reader is available in https://web.stanford.edu/dept/cs_edu/resources/textbook/
 
 examples/ are files that I make following the book.
 The notation 1-4.something.cpp means is a numbered example from the book.
